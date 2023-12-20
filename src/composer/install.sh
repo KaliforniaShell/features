@@ -14,8 +14,8 @@ ensure_nanolayer nanolayer_location "v0.5.5"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.7" \
-    --option package='sqlfluff' --option injections="$PLUGINS" --option version="$VERSION"
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.24" \
+    --option repo='composer/composer' --option binaryNames='composer' --option version="$VERSION"
     
 
 
